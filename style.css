@@ -1,0 +1,227 @@
+/* 
+colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
+*/
+
+@font-face {
+  font-family: "initials";
+  src: url("./font/SuperchargeItalic.otf");
+}
+
+@font-face {
+  font-family: "regular-text";
+  src: url("./font/HeroRegular.otf");
+}
+
+@font-face {
+  font-family: "title";
+  src: url("./font/SofiaProMedium-Italic.ttf");
+}
+
+.initials {
+  font-family: initials;
+  font-size: 50px;
+  margin: 10px;
+  text-decoration: none;
+  color: #00adb5;
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+.header {
+  background-color: #393e46;
+  display: flex;
+  align-items: center;
+
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-right: 50px;
+  column-gap: 25px;
+
+  width: 100%;
+  height: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #222831;
+  color: #eeeeee;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 950px;
+}
+
+.main-title {
+  text-align: center;
+  font-family: title;
+  color: #eeeeee;
+  font-size: 120px;
+  font-weight: bolder;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.main-text {
+  font-family: regular-text;
+  font-size: 50px;
+}
+
+.main-text-special {
+  color: #00adb5;
+}
+
+.main-text-address {
+  color: #393e46;
+}
+
+.nav-pills-own {
+  font-family: regular-text;
+  color: #222831;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100px;
+  text-align: center;
+}
+
+.skills {
+  background-color: #222831;
+}
+
+.skills-title {
+  font-family: regular-text;
+  font-weight: 100;
+  color: #eeeeee;
+}
+
+.skills-text {
+  font-family: regular-text;
+}
+
+.hobbies {
+  background-color: #222831;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.hobbies-title {
+  color: #eeeeee;
+}
+
+.hobby-title {
+  color: #eeeeee !important;
+  font-family: regular-text !important;
+}
+
+.hobby-btn {
+  width: 100%;
+  font-family: regular-text !important;
+  font-size: 25px !important;
+}
+
+.drop-button {
+  font-family: regular-text;
+  background-color: transparent;
+}
+
+.rockets {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.rocket-image-left {
+  width: 200px;
+  height: 200px;
+}
+
+.rocket-image-right {
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  background-color: #393e46;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.img-bg {
+  background-color: #222831;
+  border: #222831;
+}
+
+.input-field {
+  background-color: #222831 !important;
+  border-color: #6c757d !important;
+  color: #eeeeee !important;
+  font-family: regular-text;
+}
+
+.btn-submit {
+  border-color: #00adb5 !important;
+  border-width: 3px !important;
+  font-family: regular-text !important;
+  color: #00adb5 !important;
+}
+
+.input-field::placeholder {
+  color: #6c757d !important;
+}
+
+.btn-final {
+  font-family: regular-text !important;
+  font-size: 30px !important;
+  font-weight: bolder !important;
+  border-width: 5px !important;
+}
+
+.img-final {
+  border: transparent !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* BOOTSTRAP OVERWRITING */
+
+.nav-link {
+  background-color: #00adb5 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+  padding-right: 10px !important;
+  margin: 0 !important;
+}
+
+.btn-outline-info {
+  border: solid 3px !important;
+  color: #00adb5 !important;
+}
+
+.text-white {
+  color: #eeeeee !important;
+}
