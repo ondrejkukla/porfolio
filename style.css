@@ -95,7 +95,7 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   color: #222831;
   font-size: 20px;
   font-weight: 600;
-  width: 100px;
+  width: 90px;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   padding: 0px;
 }
 
-/* BOOTSTRAP OVERWRITING */
+/* BOOTSTRAP CLASSES OVERWRITING */
 
 .nav-link {
   background-color: #00adb5 !important;
@@ -225,3 +225,24 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 .text-white {
   color: #eeeeee !important;
 }
+
+.close {
+  border: transparent !important;
+  background-color: transparent !important;
+}
+
+.modal-content {
+  background-color: #393E46 !important;
+}
+
+.modal-header {
+  color: #eeeeee !important;
+  font-family: regular-text !important;
+}
+
+.modal-body {
+  color: #eeeeee !important;
+  font-family: regular-text !important;
+}
+
+
