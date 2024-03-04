@@ -13,22 +13,6 @@
     <title>Who is this?</title>
   </head>
   <body class="body">
-    <!-- JavaScript-->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
 
     <div class="header">
       <div class="logo">
@@ -37,7 +21,7 @@
 
       <ul class="nav nav-pills header-buttons">
         <li class="nav-item">
-          <a class="nav-link active nopadding" href="">
+          <a class="nav-link active nopadding" data-toggle="modal" data-target="#exampleModalCenter" href="">
             <img
               src="./images/money-bag.png"
               alt="bag of money"
@@ -47,7 +31,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nopadding" href="">
+          <a class="nav-link active nopadding" href="#footer">
             <img
               src="./images/contact-icon.png"
               alt="bag of money"
@@ -57,12 +41,28 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nopadding" href="">
-            <img src="./images/rating.png" alt="bag of money" height="40px" />
-            <span class="nav-pills-own">RATING</span>
+          <a class="nav-link active nopadding" href="./cv_kukla.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="./images/pdf.png" alt="bag of money" height="40px" />
+            <span class="nav-pills-own">CV.PDF</span>
           </a>
         </li>
       </ul>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-center" role="document">
+          <div class="modal-content">
+            <div class="d-flex modal-header justify-content-center">
+              <h5 class="modal-title text-center" id="exampleModalLongTitle">DONATE</h5>
+              </button>
+            </div>
+            <div class="modal-body">
+              Haha, just kidding
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="main">
@@ -202,7 +202,7 @@
                 Have been running since 2023. I have attented the Prygl race
                 once and definitely plan to attend it again.
               </p>
-              <a  class="btn btn-outline-info hobby-btn"> Show my Strava </a>
+              <a href="https://www.strava.com/athletes/120044538" class="btn btn-outline-info hobby-btn" target="blank" rel="noopener noreferrer"> Show my Strava </a>
             </div>
           </div>
           <div class="col d-flex align-items-start">
@@ -246,7 +246,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="container">
         <footer
           class="d-flex flex-wrap justify-content-between align-items-center pt-3 my-1 border-top-0"
@@ -257,7 +257,7 @@
 
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
-              <a class="text-body-secondary" href="#"
+              <a class="text-body-secondary" href="https://www.linkedin.com/in/ondrejkukla/" target="blank" rel="noopener noreferrer"
                 ><img
                   src="./images/linkedin.png"
                   alt="linkedin icon"
@@ -265,23 +265,74 @@
               /></a>
             </li>
             <li class="ms-3">
-              <a class="text-body-secondary" href="#"
+              <a class="text-body-secondary" href="https://github.com/ondrejkukla" target="blank" rel="noopener noreferrer"
                 ><img src="./images/github.png" alt="github icon" width="50"
               /></a>
             </li>
             <li class="ms-3">
-              <a class="text-body-secondary" href="#"
+              <a class="text-body-secondary" data-toggle="modal" data-target="#emailModal" href=""
                 ><img src="./images/mail.png" alt="email icon" width="50"
               /></a>
+              <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                  <div class="modal-content">
+                    <div class="d-flex modal-header justify-content-center">
+                      <h5 class="modal-title text-center" id="emailModal">EMAIL</h5>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      vondrej.kukla@gmail.com
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="ms-3">
-              <a class="text-body-secondary" href="#"
+              <a class="text-body-secondary" data-toggle="modal" data-target="#mobileModal" href="#"
                 ><img src="./images/phone.png" alt="email icon" width="50"
               /></a>
+              <div class="modal fade" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered text-center" role="document">
+                  <div class="modal-content">
+                    <div class="d-flex modal-header justify-content-center">
+                      <h5 class="modal-title text-center" id="exampleModalLongTitle">MOBILE</h5>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      +420 725 875 586
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                      <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </footer>
       </div>
     </div>
+    
+    
+    <!-- JavaScript-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
