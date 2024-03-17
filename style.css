@@ -3,26 +3,8 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 */
 
 @font-face {
-  font-family: "initials";
-  src: url("./font/SuperchargeItalic.otf");
-}
-
-@font-face {
   font-family: "regular-text";
   src: url("./font/HeroRegular.otf");
-}
-
-@font-face {
-  font-family: "title";
-  src: url("./font/SofiaProMedium-Italic.ttf");
-}
-
-.initials {
-  font-family: initials;
-  font-size: 50px;
-  margin: 10px;
-  text-decoration: none;
-  color: #00adb5;
 }
 
 .body {
@@ -30,30 +12,36 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   padding: 0px;
 }
 
-.logo {
-  padding-top: 10px;
+.nav-cv {
+  border-color: #00adb5 !important;
+  font-family: regular-text !important;
+  color: #00adb5 !important;
+  border-width: 2px !important;
+  text-decoration: none !important;
+  width: 100px !important;
+}
+
+.nav-cv:hover {
+  background-color: #00adb5 !important;
+  color: #393e46 !important;
+}
+
+.nav-contact {
+  border-color: #00adb5 !important;
+  font-family: regular-text !important;
+  color: #222831 !important;
+  background-color: #00adb5 !important;
+  border-width: 2px !important;
+  text-decoration: none !important;
+  width: 100px !important;
 }
 
 .header {
   background-color: #393e46;
   display: flex;
   align-items: center;
-
   margin: 0px;
   padding: 0px;
-  width: 100%;
-}
-
-.header-buttons {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding-right: 50px;
-  column-gap: 25px;
-
-  width: 100%;
-  height: 50px;
 }
 
 .main {
@@ -64,22 +52,11 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   margin: 0px;
   padding: 0px;
   width: 100%;
-  height: 950px;
-}
-
-.main-title {
-  text-align: center;
-  font-family: title;
-  color: #eeeeee;
-  font-size: 120px;
-  font-weight: bolder;
-  margin-top: 100px;
-  margin-bottom: 150px;
 }
 
 .main-text {
   font-family: regular-text;
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .main-text-special {
@@ -88,15 +65,6 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 
 .main-text-address {
   color: #393e46;
-}
-
-.nav-pills-own {
-  font-family: regular-text;
-  color: #222831;
-  font-size: 20px;
-  font-weight: 600;
-  width: 90px;
-  text-align: center;
 }
 
 .skills {
@@ -141,25 +109,6 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   background-color: transparent;
 }
 
-.rockets {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
-.rocket-image-left {
-  width: 200px;
-  height: 200px;
-}
-
-.rocket-image-right {
-  width: 200px;
-  height: 200px;
-}
-
 .footer {
   background-color: #393e46;
   display: flex;
@@ -170,24 +119,6 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 .img-bg {
   background-color: #222831;
   border: #222831;
-}
-
-.input-field {
-  background-color: #222831 !important;
-  border-color: #6c757d !important;
-  color: #eeeeee !important;
-  font-family: regular-text;
-}
-
-.btn-submit {
-  border-color: #00adb5 !important;
-  border-width: 3px !important;
-  font-family: regular-text !important;
-  color: #00adb5 !important;
-}
-
-.input-field::placeholder {
-  color: #6c757d !important;
 }
 
 .btn-final {
@@ -203,12 +134,17 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   padding: 0px;
 }
 
+.contact {
+  font-family: regular-text;
+  font-size: 18px;
+}
+
 /* BOOTSTRAP CLASSES OVERWRITING */
 
 .nav-link {
-  background-color: #00adb5 !important;
-  display: flex !important;
-  align-items: center !important;
+  color: #eeeeee !important;
+  font-family: regular-text;
+  font-size: 20px !important;
 }
 
 .nopadding {
@@ -232,7 +168,7 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 }
 
 .modal-content {
-  background-color: #393E46 !important;
+  background-color: #393e46 !important;
 }
 
 .modal-header {
@@ -244,5 +180,3 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
   color: #eeeeee !important;
   font-family: regular-text !important;
 }
-
-

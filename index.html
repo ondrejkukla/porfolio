@@ -10,167 +10,147 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Who is this?</title>
+    <title>Resume</title>
   </head>
   <body class="body">
-
     <div class="header">
-      <div class="logo">
-        <a class="initials" href="">OK</a>
-      </div>
-
-      <ul class="nav nav-pills header-buttons">
-        <li class="nav-item">
-          <a class="nav-link active nopadding" data-toggle="modal" data-target="#exampleModalCenter" href="">
-            <img
-              src="./images/money-bag.png"
-              alt="bag of money"
-              height="40px"
-            />
-            <span class="nav-pills-own">DONATE</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active nopadding" href="#footer">
-            <img
-              src="./images/contact-icon.png"
-              alt="bag of money"
-              height="40px"
-            />
-            <span class="nav-pills-own">CONTACT</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active nopadding" href="./cv_kukla.pdf" target="_blank" rel="noopener noreferrer">
-            <img src="./images/pdf.png" alt="bag of money" height="40px" />
-            <span class="nav-pills-own">CV.PDF</span>
-          </a>
-        </li>
-      </ul>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered text-center" role="document">
-          <div class="modal-content">
-            <div class="d-flex modal-header justify-content-center">
-              <h5 class="modal-title text-center" id="exampleModalLongTitle">DONATE</h5>
-              </button>
-            </div>
-            <div class="modal-body">
-              Haha, just kidding
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="main">
       <div class="container">
-        <h1 class="main-title">WHO IS THIS?</h1>
-        <div class="d-flex justify-content-around align-items-center gap-5 mb-5">
-          <p class="main-text"> MY NAME IS <span class="main-text-special">ONDREJ</span> <br>I PRETEND TO BE A<br> <span class="main-text-special">WEB</span> DEVELOPER<br><span class="text-secondary">BRNO, CZ</span></p>
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between"
+        >
+          <div class="col-md-3 mb-md-0"></div>
+
+          <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
+            <li><a href="#about" class="nav-link px-2">ABOUT</a></li>
+            <li><a href="#skills" class="nav-link px-2">EXPERIENCE</a></li>
+            <li><a href="#hobbies" class="nav-link px-2">HOBBIES</a></li>
+            <li><a href="#result" class="nav-link px-2">RESULT</a></li>
+          </ul>
+
+          <div class="col-md-3 text-end">
+            <a
+              class="btn btn-outline-primary nav-cv"
+              href="./cv_kukla.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CV.PDF</a
+            >
+            <a class="fw-bold btn btn-primary nav-contact" href="#footer"
+              >CONTACT</a
+            >
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="main" id="about">
+      <div class="container my-5">
+        <div class="d-flex justify-content-around align-items-center">
+          <p class="main-text">
+            MY NAME IS ONDREJ <br />I AM A
+            <span class="main-text-special">WEB DEVELOPER</span> <br /><span
+              class="text-secondary"
+              >BRNO, CZ</span
+            >
+          </p>
           <div>
-            <img src="./images/photo.png" width="350px" alt="picture">
+            <img src="./images/photo.png" width="350px" alt="picture" />
           </div>
         </div>
       </div>
     </div>
 
-      <div class="skills">
-        <div class="container text-secondary px-4 py-3 text-center border-top">
-          <div class="py-2 container d-flex align-items-center">
-            <img
-              src="./images/rocket.png"
-              class="rocket-image-left"
-              alt="rocket image"
-            />
-            <div class="d-flex row justify-content-center mb-3">
-              <h1 class="display-4 text-white skills-title mb-3">SKILLS</h1>
-            <div class="col-lg-10">
-              <p class="fs-5 mb-4 skills-text text-secondary">
-                Educated mechanical engineer specialized in space industry have decided
-                to switch to IT field. Learns stuff by himself, usually through online courses.
-                Currently working on comprehensive web development course. Also diggs into UX / UI field.
-                Works as a software engineer at SAP.
-              </p>
-              <h3 class="display-4 text-white skills-title mb-4">STACK</h3>
+    <div class="skills">
+      <div class="container px-4 py-4">
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-3 g-5">
+            <div class="col d-flex flex-column gap-3">
               <div
-                class="d-grid gap-3 d-sm-flex justify-content-sm-center dropdown"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="btn btn-outline-info btn-lg px-4 fw-bold dropdown-toggle"
-                    id="frontend"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span class="drop-button fs-4">Frontend</span>
-                  </button>
-                  <div class="dropdown-menu bg-dark drop-front" aria-labelledby="frontend">
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">HTML <img src="./images/stack/html-5.png" alt="html" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">CSS <img src="./images/stack/css-3.png" alt="css" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">JS <img src="./images/stack/javascript.png" alt="js" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">TS <img src="./images/stack/typescript.png" alt="ts" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Mocha <img src="./images/stack/mocha.png" alt="mocha" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">React <img src="./images/stack/react.png" alt="react" width="30px"></button>
-                  </div>
+                class="d-inline-flex align-items-center justify-content-center px-4"
+              ></div>
+              <h4 class="fw-semibold fs-2 hobby-title text-white">
+                SELF - MADE
+              </h4>
+              <p class="skills-text text-secondary fs-4">
+                Engaging in self-directed learning via online courses while
+                developing my first web page.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-3">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              ></div>
+              <h4 class="fw-semibold fs-2 hobby-title text-white">GROWTH</h4>
+              <p class="skills-text text-secondary fs-4">
+                I am on the lookout for a mentor who can help me tap into the
+                boundless potential I possess.
+              </p>
+            </div>
+
+            <div class="col d-flex flex-column gap-3">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              ></div>
+              <h4 class="fw-semibold fs-2 hobby-title text-white">
+                TEAM PLAYER
+              </h4>
+              <p class="skills-text text-secondary fs-4">
+                I prefer to work in a scrum team. The biggest benefit is the
+                culture of openness and transparency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills" id="skills">
+      <div class="container text-secondary px-4 py-3 text-center">
+        <div class="py-2 d-block align-items-center border-top">
+          <div class="row justify-content-center">
+            <h1 class="display-4 text-white skills-title pt-3">EXPERIENCE</h1>
+          </div>
+
+          <div>
+            <div class="container row px-2">
+              <div class="d-row row-cols-md-2 align-items-md-center g-4 pb-5">
+                <div class="d-block align-items-start gap-2 pb-4">
+                  <h2 class="text-start fs-1 hobby-title">
+                    SAP <span class="fs-3 text-secondary">2023 - current</span>
+                  </h2>
+                  <p class="fs-5 text-secondary text-start hobby-title">
+                    ABAP backend development of an application in finance.
+                    <br />
+                    E2E, integration, performance test of set of applications.
+                    <br />
+                    Agile methodology.
+                  </p>
                 </div>
-  
-                <div class="d-flex align-items-center" >
-                  <button
-                    type="button"
-                    class="btn btn-outline-light btn-lg px-4 dropdown-toggle"
-                    id="backend"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span class="drop-button fs-4">Backend</span>
-                  </button>
-                  <div class="dropdown-menu bg-dark" aria-labelledby="backend">
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Python <img src="./images/stack/python.png" alt="python" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Node.js <img src="./images/stack/node-js.png" alt="python" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">ABAP <img src="./images/stack/sap.png" alt="python" width="30px"></button>
-                  </div>
+                <div class="d-block align-items-start gap-2 pb-4">
+                  <h2 class="text-start fs-1 hobby-title">morivo.cz</h2>
+                  <p class="fs-5 text-secondary text-start hobby-title">
+                    First real-world web development project. <br />
+                    Written in React and node.js?
+                  </p>
                 </div>
-                <div class="d-flex align-items-center">
-                  <button
-                    type="button"
-                    class="btn btn-outline-light btn-lg px-4 dropdown-toggle"
-                    id="general"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <span class="drop-button fs-4">General</span>
-                  </button>
-                  <div class="dropdown-menu drop-gen bg-dark" aria-labelledby="general">
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Jira <img src="./images/stack/jira.png" alt="jira" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">GitHub <img src="./images/stack/github.png" alt="github" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">SQL <img src="./images/stack/sql.png" alt="sql" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Jenkins <img src="./images/stack/jenkins.png" alt="jenkins" width="30px"></button>
-                    <button class="d-flex justify-content-between dropdown-item text-secondary drop-button fs-5">Docker <img src="./images/stack/docker.png" alt="docker" width="30px"></button>
-                  </div>
+                <div class="d-block align-items-start gap-2">
+                  <h2 class="text-start fs-1 hobby-title">S.A.B. Aerospace</h2>
+                  <p class="fs-5 text-secondary hobby-title text-start">
+                    Mechanical design engineer of a space project. <br />
+                    Colaboration with the European Space Agency. <br />
+                    Design, communication with the client, documentation
+                  </p>
                 </div>
               </div>
             </div>
-            </div>
-            
-            <img
-              src="./images/rocket.png"
-              class="rocket-image-right"
-              alt="rocket image"
-            />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hobbies">
-      <div class="container px-4 py-4" id="hanging-icons">
+    <div class="hobbies" id="hobbies">
+      <div class="container px-4 pb-4" id="hanging-icons">
         <div class="pt-4 border-top">
           <h2 class="display-4 skills-title text-center">HOBBIES</h2>
         </div>
@@ -179,7 +159,12 @@
             <div
               class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
-            <img src="./images/piano.png" alt="keyboard" width="75" class="img-bg"/>
+              <img
+                src="./images/piano.png"
+                alt="keyboard"
+                width="75"
+                class="img-bg"
+              />
             </div>
             <div class="hobby-title">
               <h3 class="fs-1 hobby-title">KEYBOARD</h3>
@@ -194,70 +179,143 @@
             <div
               class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
-              <img src="./images/run.png" alt="runner" width="75" class="img-bg" />
+              <img
+                src="./images/run.png"
+                alt="runner"
+                width="75"
+                class="img-bg"
+              />
             </div>
             <div class="hobby-title">
-              <h3 class="fs-1  hobby-title">RUNNING</h3>
+              <h3 class="fs-1 hobby-title">RUNNING</h3>
               <p class="fs-5 text-secondary">
                 Have been running since 2023. I have attented the Prygl race
                 once and definitely plan to attend it again.
               </p>
-              <a href="https://www.strava.com/athletes/120044538" class="btn btn-outline-info hobby-btn" target="blank" rel="noopener noreferrer"> Show my Strava </a>
+              <a
+                href="https://www.strava.com/athletes/120044538"
+                class="btn btn-outline-info hobby-btn"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                Show my Strava
+              </a>
             </div>
           </div>
           <div class="col d-flex align-items-start">
             <div
               class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
             >
-              <img src="./images/gaming.png" alt="runner" width="75" class="img-bg"/>
+              <img
+                src="./images/gaming.png"
+                alt="runner"
+                width="75"
+                class="img-bg"
+              />
             </div>
             <div class="hobby-title">
-              <h3 class="fs-1  hobby-title">VIDEO GAMES</h3>
+              <h3 class="fs-1 hobby-title">VIDEO GAMES</h3>
               <p class="fs-5 text-secondary">
                 I am a gamer since I was a kid. My favourite genre is the RPG.
                 My most favourite series is the Dark Souls.
               </p>
-              <a  class="btn btn-outline-info hobby-btn"> Death counter: 0 </a>
+              <a class="btn btn-outline-info hobby-btn"> Death counter: 0 </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="hobbies">
+    <div class="hobbies" id="result">
       <div class="container px-4 py-4" id="hanging-icons">
         <div class="pt-4 border-top">
           <h2 class="display-5 skills-title text-center">WHAT DO YOU THINK?</h2>
         </div>
-      
-        <div class="d-flex justify-content-center">
-          <div class="input-group my-3 w-75">
-            <input type="text" class="form-control input-field fs-4" placeholder="Give me a review" aria-label="Opinion input field" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary fs-4 fw-bold btn-submit" type="button" id="button-addon2">Submit</button>
+
+        <div class="d-flex d-sm-flex justify-content-sm-evenly mt-4 mb-3">
+          <button
+            type="button"
+            class="d-flex align-items-center justify-content-sm-evenly btn btn-success btn-lg px-4 me-sm-3 fw-bold w-25 btn-final"
+          >
+            HIRE ME
+            <img
+              src="./images/success.png"
+              alt="success"
+              class="img-final"
+              width="25"
+            />
+          </button>
+          <button
+            type="button"
+            class="d-flex align-items-center justify-content-sm-evenly btn btn-danger btn-lg px-4 me-sm-3 fw-bold w-25 btn-final"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            FIRE ME
+            <img
+              src="./images/reject.png"
+              alt="failure"
+              class="img-final"
+              width="25"
+            />
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered text-center"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="d-flex modal-header justify-content-center">
+                  <h5
+                    class="modal-title text-center"
+                    id="exampleModalLongTitle"
+                  >
+                    OOPS
+                  </h5>
+                </div>
+                <div class="modal-body">Sorry, this button does not work</div>
+                <div class="modal-footer d-flex justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-outline-info"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      
-        <div class="d-flex d-sm-flex justify-content-sm-evenly mt-5 mb-2">
-          <button type="button" class="d-flex align-items-center justify-content-sm-evenly btn btn-success btn-lg px-4 me-sm-3 fw-bold w-25 btn-final">HIRE ME <img src="./images/success.png" alt="success" class="img-final" width="25"></button>
-          <button type="button" class="d-flex align-items-center justify-content-sm-evenly btn btn-danger btn-lg px-4 me-sm-3 fw-bold w-25 btn-final">FIRE ME <img src="./images/reject.png" alt="success" class="img-final" width="25"></button>
-        </div>
-
-
       </div>
     </div>
 
     <div class="footer" id="footer">
       <div class="container">
         <footer
-          class="d-flex flex-wrap justify-content-between align-items-center pt-3 my-1 border-top-0"
+          class="d-flex flex-wrap justify-content-evenly align-items-center py-3 border-top-0"
         >
-          <div class="col-md-4 d-flex align-items-center">
-            <span class="d-flex align-items-center m-0 initials">OK</span>
+          <div class="row d-flex align-items-center">
+            <p class="m-0 text-white contact">
+              email: vondrej.kukla@gmail.com <br />
+            </p>
+            <p class="m-0 text-white contact">mobile: +420 725 875 586</p>
           </div>
 
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
-              <a class="text-body-secondary" href="https://www.linkedin.com/in/ondrejkukla/" target="blank" rel="noopener noreferrer"
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/ondrejkukla/"
+                target="blank"
+                rel="noopener noreferrer"
                 ><img
                   src="./images/linkedin.png"
                   alt="linkedin icon"
@@ -265,58 +323,19 @@
               /></a>
             </li>
             <li class="ms-3">
-              <a class="text-body-secondary" href="https://github.com/ondrejkukla" target="blank" rel="noopener noreferrer"
+              <a
+                class="text-body-secondary"
+                href="https://github.com/ondrejkukla"
+                target="blank"
+                rel="noopener noreferrer"
                 ><img src="./images/github.png" alt="github icon" width="50"
               /></a>
-            </li>
-            <li class="ms-3">
-              <a class="text-body-secondary" data-toggle="modal" data-target="#emailModal" href=""
-                ><img src="./images/mail.png" alt="email icon" width="50"
-              /></a>
-              <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered text-center" role="document">
-                  <div class="modal-content">
-                    <div class="d-flex modal-header justify-content-center">
-                      <h5 class="modal-title text-center" id="emailModal">EMAIL</h5>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      vondrej.kukla@gmail.com
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                      <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="ms-3">
-              <a class="text-body-secondary" data-toggle="modal" data-target="#mobileModal" href="#"
-                ><img src="./images/phone.png" alt="email icon" width="50"
-              /></a>
-              <div class="modal fade" id="mobileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered text-center" role="document">
-                  <div class="modal-content">
-                    <div class="d-flex modal-header justify-content-center">
-                      <h5 class="modal-title text-center" id="exampleModalLongTitle">MOBILE</h5>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      +420 725 875 586
-                    </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                      <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </li>
           </ul>
         </footer>
       </div>
     </div>
-    
-    
+
     <!-- JavaScript-->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
