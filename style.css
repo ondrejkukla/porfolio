@@ -57,6 +57,7 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 .main-text {
   font-family: regular-text;
   font-size: 55px;
+
 }
 
 .main-text-special {
@@ -91,6 +92,15 @@ colors: #222831 - black, #393E46 - grey, #00ADB5 - teal, #EEEEEE - white
 
 .hobbies-title {
   color: #eeeeee;
+}
+
+.text-modification:hover {
+  color: #00adb5;
+}
+
+.text-modification {
+  color: #eeeeee;
+  text-decoration: none;
 }
 
 .hobby-title {

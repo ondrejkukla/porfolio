@@ -14,20 +14,20 @@
   </head>
   <body class="body">
     <div class="header">
-      <div class="container">
+      <div class="container text">
         <header
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between"
         >
-          <div class="col-md-3 mb-md-0"></div>
+          <div class="col-md-3 col-sm-2 col-1 mb-md-0"></div>
 
-          <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
+          <ul class="nav col-md-auto justify-content-center mb-md-0">
             <li><a href="#about" class="nav-link px-2">ABOUT</a></li>
             <li><a href="#skills" class="nav-link px-2">EXPERIENCE</a></li>
             <li><a href="#hobbies" class="nav-link px-2">HOBBIES</a></li>
             <li><a href="#result" class="nav-link px-2">RESULT</a></li>
           </ul>
 
-          <div class="col-md-3 text-end">
+          <div class="col-md-3 text-end nowrap">
             <a
               class="btn btn-outline-primary nav-cv"
               href="./cv_kukla.pdf"
@@ -54,7 +54,12 @@
             >
           </p>
           <div>
-            <img src="./images/photo.png" width="350px" alt="picture" />
+            <img
+              class="d-none d-sm-block d-sm-none d-md-block"
+              src="./images/photo.png"
+              width="350px"
+              alt="picture"
+            />
           </div>
         </div>
       </div>
@@ -128,7 +133,15 @@
                   </p>
                 </div>
                 <div class="d-block align-items-start gap-2 pb-4">
-                  <h2 class="text-start fs-1 hobby-title">morivo.cz</h2>
+                  <h2 class="text-start fs-1 hobby-title">
+                    <a
+                      class="text-modification"
+                      href="https://www.morivo.cz"
+                      target="blank"
+                      rel="noopener noreferrer"
+                      >morivo.cz</a
+                    >
+                  </h2>
                   <p class="fs-5 text-secondary text-start hobby-title">
                     First real-world web development project. <br />
                     Written in React and node.js?
@@ -235,29 +248,17 @@
         <div class="d-flex d-sm-flex justify-content-sm-evenly mt-4 mb-3">
           <button
             type="button"
-            class="d-flex align-items-center justify-content-sm-evenly btn btn-success btn-lg px-4 me-sm-3 fw-bold w-25 btn-final"
+            class="d-flex align-items-center justify-content-sm-evenly btn btn-success btn-lg px-4 me-sm-3 fw-bold btn-final px-3"
           >
             HIRE ME
-            <img
-              src="./images/success.png"
-              alt="success"
-              class="img-final"
-              width="25"
-            />
           </button>
           <button
             type="button"
-            class="d-flex align-items-center justify-content-sm-evenly btn btn-danger btn-lg px-4 me-sm-3 fw-bold w-25 btn-final"
+            class="d-flex align-items-center justify-content-sm-evenly btn btn-danger btn-lg px-4 me-sm-3 fw-bold btn-final px-3"
             data-toggle="modal"
             data-target="#exampleModalCenter"
           >
             FIRE ME
-            <img
-              src="./images/reject.png"
-              alt="failure"
-              class="img-final"
-              width="25"
-            />
           </button>
           <div
             class="modal fade"
@@ -300,16 +301,18 @@
     <div class="footer" id="footer">
       <div class="container">
         <footer
-          class="d-flex flex-wrap justify-content-evenly align-items-center py-3 border-top-0"
+          class="d-flex justify-content-evenly align-items-center py-3 border-top-0"
         >
           <div class="row d-flex align-items-center">
-            <p class="m-0 text-white contact">
+            <p class="text-white contact my-0 py-0">
               email: vondrej.kukla@gmail.com <br />
             </p>
-            <p class="m-0 text-white contact">mobile: +420 725 875 586</p>
+            <p class="text-white contact">mobile: +420 725 875 586</p>
           </div>
 
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <ul
+            class="nav col-md-4 col-sm-4 col-3 justify-content-end list-unstyled d-inline-flex nowrap"
+          >
             <li class="ms-3">
               <a
                 class="text-body-secondary"
